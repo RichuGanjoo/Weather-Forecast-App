@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/6df910355a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="AppName">Current Weather</h1>
+        <br />
+
+        <form>
+            <input type="text" id="entered-city-name" placeholder="Enter City Name" />
+
+            <button type="submit" class="btn btn-dark btn-sm" id="search-city">
+                Search
+            </button>
+            <button type="submit" class="btn btn-dark btn-sm" id="current-city-temp">
+                Current City Temperature
+            </button>
+        </form>
+
+        <br />
+        <h2 id="city-name"></h2>
+        <h3 id="current-date-time"></h3>
+        <div class="row">
+            <div class="col-6">
+                <img src="" />
+                <h3>
+                    <div id="description">
+
+                    </div>
+
+                    <span id="current-temperature">
+
+                    </span>
+                </h3>
+            </div>
+            <div class="col-6">
+                <h3>
+                    <div id="cloud">
+
+                    </div>
+
+                    <div id="humidity">
+
+                    </div>
+
+                    <div id="wind">
+
+                    </div>
+
+                </h3>
+            </div>
+        </div>
+        <br />
+        <h4>Weather predictions for the next five days</h4>
+        <div class="row">
+            <div class="col-2">
+                <br />
+                <i class="fas fa-cloud"></i>
+                <br />
+                Fri
+                <br />
+                23° 16°
+            </div>
+            <div class="col-2">
+                <br />
+                <i class="fas fa-wind"></i>
+                <br />
+                Sat
+                <br />
+                23° 16°
+            </div>
+            <div class="col-2">
+                <br />
+                <i class="fas fa-sun"></i>
+                <br />
+                Sun
+                <br />
+                23° 16°
+            </div>
+            <div class="col-2">
+                <br />
+                <i class="fas fa-cloud-sun-rain"></i>
+                <br />
+                Mon
+                <br />
+                23° 16°
+            </div>
+            <div class="col-2">
+                <br />
+                <i class="fas fa-cloud"></i>
+                <br />
+                Tue
+                <br />
+                23° 16°
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
