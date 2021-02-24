@@ -94,4 +94,8 @@ function showTemperature(response) {
   let location = response.data.name;
   let locationDisplay = document.querySelector("#city-name");
   locationDisplay.innerHTML = location;
+
+  let time = (response.data.time)
+  let timeDisplay = document.querySelector("#city-time");
+  timeDisplay.innerHTML=time;
 }
